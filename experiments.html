@@ -14,5 +14,20 @@
             <h2>Hidden away</h2>
             <p>If you see this, hello there.</p>
         </template>
+        <h3>Playing Audio</h3>
+        <audio src="mixkit-arcade-retro-game-over-213.wav" controls></audio>
+        <h3>Video Playing</h3>
+        <video width="320" height="240" controls>
+            <source src="sample-10s-h265.mp4">
+        </video>
+        <canvas id="test" width="320" height="240">
+            <script>
+                const canvas = document.getElementById("test");
+                const ctx = canvas.getContext("2d");
+                ctx.strokeStyle = "green"
+                ctx.lineWidth = 10
+                ctx.strokeRect(100, 30, 100, 200);
+            </script>
+        </canvas>
     </body>
 </html>
